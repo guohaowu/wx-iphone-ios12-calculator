@@ -1,0 +1,14 @@
+<view class="calculator-display">
+  <view class="display-section">{{ show.showNumber }}</view>
+</view>
+<view class='calculator-buttons'>
+  <view 
+  wx:for="{{buttons}}" 
+  wx:key="{{item.id}}"
+  id="{{item.id}}"
+  data-index='{{index}}'
+  class="{{ 'button-' + item.bClass }} {{item.touchstart ? 'button-' + item.bClass + '-touchstart' : ''}} {{item.touchend ? 'button-' + item.bClass + '-touchend' : ''}}"
+  catchtouchstart="btntouchstart" 
+  catchtouchend="btntouchend"
+  > {{item.text}}</view>
+</view>

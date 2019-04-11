@@ -1,0 +1,88 @@
+/* pages/calculator/calculator.wxss */
+page {
+    font-family: Helvetica;
+  background-color: #010101;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.calculator-display {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  flex-grow: 1;
+  padding: 0 30rpx;
+  font-size: 140rpx;
+  box-sizing: border-box;
+}
+.display-section {
+  position: absolute;
+  margin: auto 60rpx;
+  bottom: 0;
+  right: 0;
+}
+.calculator-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+.calculator-buttons>view {
+  width: 150rpx;
+  height: 150rpx;
+  margin:  15rpx 0;
+  border-radius: 150rpx 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 62rpx;
+}
+#zero {
+  width: 330rpx;
+}
+.button-symbol {
+  background-color: #a6a6a6;
+  color: #000000;
+}
+.button-symbol-touchstart {
+  background-color: #d9d9d9;
+}
+.button-symbol-touchend {
+  background-color: #a6a6a6;
+  transition: background-color 0.5s;
+}
+.button-number {
+  background: #333333;
+  color: #ffffff;
+}
+.button-number-touchstart {
+  background-color: #737373;
+}
+.button-number-touchend {
+  background-color: #333333;
+  transition: background-color 0.5s;
+}
+.button-operator {
+  background-color: #ff9501;
+  color: #ffffff;
+  transition: background-color, color 0.5s;
+}
+.button-operator-touchstart {
+  background-color: #fdd4a8;
+}
+.button-operator-touchend {
+  background-color: #ffffff;
+  color: #ff9501;
+  transition: background-color, color 0.5s;
+}
+.button-equal {
+  background-color: #ff9501;
+  color: #ffffff;
+}
+.button-equal-touchstart {
+  background-color: #fdd4a8;
+}
+.button-equal-touchend {
+  background-color: #ff9501;
+  transition: background-color 0.5s;
+}
+
